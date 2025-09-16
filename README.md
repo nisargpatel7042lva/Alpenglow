@@ -22,6 +22,10 @@ Prerequisites:
 - TLA+ Tools (TLC, TLAPS). On Linux/WSL, install Java 11+ and TLAPS per upstream instructions.
 - Optional: Rust + `stateright` if using the statistical model checking harness.
 
+Quick start (WSL/Ubuntu):
+
+- Install Java 11+ and TLAPS/TLC. On Ubuntu: `sudo apt install default-jre` and follow TLAPS install docs.
+
 Quick start (TLC):
 
 ```bash
@@ -46,5 +50,15 @@ The models abstract away implementation details to focus on safety/liveness prop
 License
 
 Apache License 2.0. See `LICENSE`.
+
+References
+
+- Anza blog: Alpenglow overview and claims: `https://www.anza.xyz/blog/alpenglow-a-new-consensus-for-solana`
+- Helius deep-dive: `https://www.helius.dev/blog/alpenglow`
+- ETH slides (Wattenhofer): `https://disco.ethz.ch/members/wroger/AlpenglowPresentation.pdf`
+- Whitepaper (Drive): `https://drive.google.com/file/d/1Rlr3PdHsBmPahOInP6-Pl0bMzdayltdV/view`
+- Reference implementation: `https://github.com/qkniep/alpenglow/tree/main`
+- Stateright book: `https://www.stateright.rs/title-page.html`
+- Learn TLA+: `https://learntla.com/core/index.html`
 
 

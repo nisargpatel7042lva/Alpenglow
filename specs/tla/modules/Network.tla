@@ -5,7 +5,8 @@ VARIABLE MaxDelayConst
 
 InitNetwork(msgs) == msgs = << >>
 
-NetworkDeliver(msgs) == \E m \in DOMAIN msgs : TRUE \* placeholder nondeterministic delivery
+\* Abstract delivery: no-op step to allow fairness-based progress in liveness proofs
+NetworkDeliver(msgs) == msgs' = msgs
 
 PartialSynchrony(MaxDelay) == TRUE
 
